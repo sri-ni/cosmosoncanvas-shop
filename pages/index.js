@@ -19,9 +19,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>{brand}</h1>
+        <h1 className={styles.brand}>{brand}</h1>
         <p className={styles.description}>
-          The best space jellyfish swag on the web!
+          Unique Space-themed pouring Art on Canvas!
         </p>
 
         <ul className={styles.grid}>
