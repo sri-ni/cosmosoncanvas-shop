@@ -3,7 +3,7 @@ import { useState, createContext, useContext, useEffect } from 'react';
 import { initiateCheckout } from '../lib/payments.js'
 import { getStorageItem, setStorageItem } from '../lib/storage.js'
 
-import products from '../../shared/products.json';
+import products from '../shared/products.json';
 
 const CART_STATE_KEY = 'cart';
 

@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 
 import { useCart } from '../hooks/use-cart.js';
 
-import products from '../../shared/products.json';
+import products from '../shared/products.json';
 
 export default function Home() {
 
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Cosmos On Canvas</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

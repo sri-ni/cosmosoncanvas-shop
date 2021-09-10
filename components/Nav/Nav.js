@@ -11,7 +11,7 @@ const Nav = () => {
     <nav className={styles.nav}>
       <p className={styles.navTitle}>
         <Link href="/">
-          <a>Space Jelly Shop</a>
+          <a>Cosmos On Canvas</a>
         </Link>
       </p>
       <p className={styles.navCart}>

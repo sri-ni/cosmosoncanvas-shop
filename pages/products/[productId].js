@@ -3,7 +3,7 @@ import styles from '../../styles/Product.module.css'
 
 import { useCart } from '../../hooks/use-cart.js';
 
-import products from '../../../shared/products.json';
+import products from '../../shared/products.json';
 
 export default function Product({ product }) {
 
