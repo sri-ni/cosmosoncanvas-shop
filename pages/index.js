@@ -8,16 +8,18 @@ import products from '../shared/products.json';
 
 export default function Home() {
 
+  const brand = 'Cosmos On Canvas';
   const { addToCart } = useCart();
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>Cosmos On Canvas</title>
+        <title>{brand}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
+        <h1>{brand}</h1>
         <p className={styles.description}>
           The best space jellyfish swag on the web!
         </p>
