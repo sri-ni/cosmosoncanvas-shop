@@ -31,6 +31,7 @@ export function useCartState() {
     const product = products.find(({ id }) => `${id}` === `${key}`);
     return {
       ...cart.products[key],
+      image: product.image,
       pricePerUnit: product.price
     }
   });

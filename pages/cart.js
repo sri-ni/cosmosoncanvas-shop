@@ -10,6 +10,10 @@ import Table from '../components/Table';
 
 const columns = [
   {
+    columnId: 'image',
+    Header: 'Image'
+  },
+  {
     columnId: 'title',
     Header: 'Product Name'
   },
@@ -31,7 +35,7 @@ export default function Home() {
 
   const { cartItems, checkout } = useCart();
 
-  const data = cartItems.map(({ id, quantity, pricePerUnit }) => {
+  const data = cartItems.map(({ id, image, quantity, pricePerUnit }) => {
     const product = products.find(({ id: pid }) => pid === id);
     const { title } = product || {};
 
@@ -68,6 +72,7 @@ export default function Home() {
 
     return {
       id,
+      image,
       title,
       quantity: <Quantity />,
       pricePerUnit: pricePerUnit.toFixed(2),

@@ -23,11 +23,19 @@ const Table = ({ className, data, columns }) => {
         </tr>
       </thead>
       <tbody>
-        {rows.map((row, index) => {
+        {rows.map((row, index) => {          
           return (
             <tr key={index}>
               { row.map((cell, index) => {
-                return <td key={index}>{ cell }</td>
+                if (index === 0) {
+                  return (
+                    <td key={index}>
+                      <img src={cell} style={{height: '75px', borderRadius: '.25rem'}}/>
+                    </td>
+                  )
+                } else {
+                  return <td key={index}>{ cell }</td>
+                }
               })}
             </tr>
           )
