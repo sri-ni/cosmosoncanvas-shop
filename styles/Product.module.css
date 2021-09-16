@@ -8,6 +8,11 @@
 	align-items: center;
 }
 
+.back {
+	color: #4d78a8;
+	width: 100%;
+}
+
 .main {
 	padding: 3rem 0;
 	flex: 1;

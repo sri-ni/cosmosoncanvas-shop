@@ -1,5 +1,8 @@
 import Head from 'next/head'
+import Link from 'next/link';
 import styles from '../../styles/Product.module.css'
+
+import { IoMdArrowRoundBack } from 'react-icons/io';
 
 import { useCart } from '../../hooks/use-cart.js';
 
@@ -18,7 +21,16 @@ export default function Product({ product }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+     
+
       <main className={styles.main}>
+
+      <Link href="/">
+          <a className={styles.back}>
+            <IoMdArrowRoundBack /> Back
+          </a>
+        </Link>
+
         <div className={styles.productImage}>
           <img src={image} alt={title} />
         </div>
