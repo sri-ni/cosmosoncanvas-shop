@@ -2,6 +2,7 @@
 
 ## Tech Stack
 
+- Next.js
 - React
 - Stripe
 
