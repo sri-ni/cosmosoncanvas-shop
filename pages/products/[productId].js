@@ -7,6 +7,7 @@ import { IoMdArrowRoundBack } from 'react-icons/io';
 import { useCart } from '../../hooks/use-cart.js';
 
 import products from '../../shared/products.json';
+import {FaShoppingCart} from "react-icons/fa";
 
 export default function Product({ product }) {
 
@@ -21,15 +22,29 @@ export default function Product({ product }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-     
+
+      <button className="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700">
+        Click me
+      </button>
+
 
       <main className={styles.main}>
+
+        <div className='container'>
+          <Link href="/cart">
+            <a className='flex items-center'>
+              <FaShoppingCart className="flex-shrink-0 mr-3" />
+              Back
+            </a>
+          </Link>
+        </div>
 
       <Link href="/">
           <a className={styles.back}>
             <IoMdArrowRoundBack /> Back
           </a>
         </Link>
+
 
         <div className={styles.productImage}>
           <img src={image} alt={title} />

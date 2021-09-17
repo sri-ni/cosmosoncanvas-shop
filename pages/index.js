@@ -6,6 +6,7 @@ import { useCart } from "../hooks/use-cart.js";
 
 import products from "../shared/products.json";
 
+
 export default function Home() {
   const brand = "Cosmos On Canvas";
   const { addToCart } = useCart();
@@ -18,10 +19,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.brand}>{brand}</h1>
-        <p className={styles.description}>
+        <h1 className="text-7xl font-bold mb-8">{brand}</h1>
+        <h4 className="text-3xl font-semibold">
           Unique Space-themed pouring Art on Canvas!
-        </p>
+        </h4>
 
         <ul className={styles.grid}>
           {products.map((product) => {
@@ -31,9 +32,9 @@ export default function Home() {
                 <Link href={`/products/${id}`}>
                   <a>
                     <img src={image} alt={title} />
-                    <h3>{title}</h3>
-                    <p>${price}</p>
-                    <p>{description}</p>
+                    <h3 className="font-normal">{title}</h3>
+                    <p className="font-semibold">${price}</p>
+                    <p className="font-light">{description}</p>
                   </a>
                 </Link>
                 <p>

@@ -14,15 +14,18 @@ const Nav = () => {
           <a>Cosmos On Canvas</a>
         </Link>
       </p>
-      <p className={styles.navCart}>
+      <p >
         <Link href="/cart">
-          <a>
-            <FaShoppingCart /> ${subtotal.toFixed(2)}
+          <a className='flex items-center'>
+            <FaShoppingCart className="flex-shrink-0 mr-3" />
+            ${subtotal.toFixed(2)}
           </a>
         </Link>
       </p>
     </nav>
   )
 }
+
+
 
 export default Nav;
